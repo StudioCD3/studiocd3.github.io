@@ -6,8 +6,8 @@
 
   <title>Studio CD3</title>
 
-  <link rel="icon" href="/cd3-icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/cd3-icon.png">
+  <link rel="icon" href="cd3-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="cd3-icon.png">
 
   <style>
     :root {
@@ -85,11 +85,13 @@
       margin-bottom: 1.5rem;
     }
 
-    /* YouTube icon link */
+    /* YouTube SVG link */
     .yt-link {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       margin-top: 2.5rem;
-      opacity: 0.7;
+      opacity: 0.65;
       transition: opacity 0.2s ease;
     }
 
@@ -97,9 +99,10 @@
       opacity: 1;
     }
 
-    .yt-link img {
-      width: 28px;
-      height: auto;
+    .yt-icon {
+      width: 30px;
+      height: 30px;
+      fill: #111111;
     }
 
     .footer {
@@ -134,12 +137,19 @@
       Meaning before scale.
     </p>
 
-    <!-- YouTube Link -->
+    <!-- YouTube Link (Official SVG) -->
     <a class="yt-link"
-       href="https://youtube.com/@studiocd3?si=AvY2rR1yTONUb1_u"
+       href="https://www.youtube.com/@studiocd3"
        target="_blank"
        aria-label="Studio CD3 on YouTube">
-      <img src="youtube.png" alt="YouTube">
+
+      <svg class="yt-icon"
+           viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg"
+           aria-hidden="true">
+        <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.094C19.599 3.5 12 3.5 12 3.5s-7.599 0-9.418.592A2.958 2.958 0 0 0 .502 6.186C0 8.012 0 12 0 12s0 3.988.502 5.814a2.958 2.958 0 0 0 2.08 2.094C4.401 20.5 12 20.5 12 20.5s7.599 0 9.418-.592a2.958 2.958 0 0 0 2.08-2.094C24 15.988 24 12 24 12s0-3.988-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
+
     </a>
 
     <div class="footer">
